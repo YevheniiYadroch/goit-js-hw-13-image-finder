@@ -6,7 +6,6 @@ let page = 1;
 async function getImages(keywords, pageNumber) {
     const response = await fetch(`https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${keywords}&page=${pageNumber}&per_page=12&key=22510887-179de1f125426041fbaaee690`)
     const images = await response.json();
-    console.log(images)
     return images;
 };
 

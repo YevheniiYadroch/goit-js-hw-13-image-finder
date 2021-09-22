@@ -20,7 +20,6 @@ var options = {
 };
 
 const callback = ([entrie], observerRef) => {
-    console.log('scroll')
     if (gallery.innerHTML === '') {
         return;
     };
